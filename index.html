@@ -5,6 +5,9 @@
     <title>Coffee</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rouge+Script&display=swap" rel="stylesheet">
 </head>
 
 <header>
@@ -117,16 +120,22 @@
     </section>
     <section class="avis">
         <div>
-            <p>Come and join</p>
+            <h4 class="rouge-script-regular">Come and join</h4>
             <h2>OUR HAPPY CUSTOMERS</h2>
         </div>
     </section>
     <section class="bandeau">
+        <img src="café.png" alt="café">
         <div>
             <h3>Join in and get 15% Off!</h3>
             <P>Suscribe to our newsletter and get 15% off discount code</P>
+            <form action="/mailregister">
+                <label for="email"></label>
+                <input type="text" id="mail" name="mailuser" value="Email adress">
+                <input type="submit" value="Subscribe" class="subscribe">
+            </form>
         </div>
-
+        <img src="café.png" alt="café" class="turn">
     </section>
 </body>
 
@@ -157,9 +166,14 @@
             <a href="">Sell your products</a>
             <a href="">Jobs</a>
         </div>
-        <div>
+        <div class="linkcontact">
             <h3>SOCIAL MEDIA</h3>
-            <p>*Logos social média*</p>
+            <div class="sociallogo">
+                <img src="twitter.png" alt="twiter">
+                <img src="fb.png" alt="facebook">
+                <img src="insta.png" alt="instagram">
+                <img src="linkedin.jpg" alt="linkedin">
+            </div>
         </div>
     </section>
 

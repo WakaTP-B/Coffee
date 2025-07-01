@@ -1,11 +1,27 @@
 * {
   border: #000 solid 1px;
   flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rouge-script-regular {
+  font-family: "Rouge Script", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
   background-image: url(coffee.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
   text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -13,8 +29,8 @@ header {
     1px 1px 0 #000;
   padding: 10px 20px;
   display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
+  height: 100%;
+  min-height: 200px;
 }
 
 .top {
@@ -29,6 +45,8 @@ nav {
 
 body {
   background-color: #e2d9c8;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .Order {
@@ -61,13 +79,14 @@ figure {
 
 
 .specialproducts {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 footer {
   background-color: #000;
   color: white;
-  height:200px;
+  height: 100%;
+  min-height: 200px;
 }
 
 .contact {
@@ -76,7 +95,9 @@ footer {
 }
 
 .avis {
-  background-color: white;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
 }
 
 .bandeau {
@@ -86,6 +107,7 @@ footer {
 
 .bandeau>img {
   height: 200px;
+  width: 250px;
 }
 
 .explore {
@@ -98,12 +120,27 @@ footer {
   background-color: rgb(0, 0, 0);
 }
 
+.subscribe {
+  line-height: 1.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
 .explore:hover {
+  background-color: rgb(102, 90, 90);
+}
+
+.subscribe:hover {
   background-color: rgb(102, 90, 90);
 }
 
 .contact a {
   color: white;
+  text-decoration: none;
 }
 
 .linkcontact {
@@ -119,4 +156,13 @@ footer {
 .specialproducts H2 {
   display: flex;
   justify-content: center;
+}
+
+.turn {
+  transform: rotate(180deg);
+}
+
+.sociallogo img {
+  height: 30px;
+  width: 30px;
 }
